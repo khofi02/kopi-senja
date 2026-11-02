@@ -1,0 +1,240 @@
+/* WARNA UTAMA */
+:root {
+  --cream: #f8f3e9;
+  --brown: #68452f;
+  --dark-brown: #3d291e;
+  --light-brown: #a98262;
+}
+
+/* NAVBAR */
+.coffee-navbar {
+  background-color: #fffdf8;
+  padding: 18px 0;
+  box-shadow: 0 2px 12px rgba(70, 45, 25, 0.08);
+}
+
+.navbar-brand {
+  color: var(--dark-brown);
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  color: #b78350;
+}
+
+.coffee-navbar .nav-link {
+  color: var(--dark-brown);
+  font-weight: 500;
+}
+
+.coffee-navbar .nav-link:hover {
+  color: var(--light-brown);
+}
+
+/* BUTTON */
+.coffee-btn {
+  background-color: var(--brown);
+  color: white;
+  padding: 11px 24px;
+  border-radius: 7px;
+}
+
+.coffee-btn:hover {
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+/* HERO */
+.hero-section {
+  background-color: var(--cream);
+  padding: 75px 0;
+}
+
+.hero-label {
+  color: var(--light-brown);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero-section h1 {
+  color: var(--dark-brown);
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero-section h1 span {
+  color: var(--light-brown);
+}
+
+.hero-description {
+  color: #756454;
+  line-height: 1.8;
+  max-width: 450px;
+  margin-bottom: 28px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* MENU */
+.menu-section {
+  background-color: #fffdf8;
+  padding: 75px 0;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.section-heading p {
+  color: var(--light-brown);
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.section-heading h2 {
+  color: var(--dark-brown);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-heading span {
+  color: #887766;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  border: 1px solid #eee4d6;
+  border-radius: 13px;
+  overflow: hidden;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(70, 45, 25, 0.12);
+}
+
+.product-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 18px;
+}
+
+.product-category {
+  color: var(--light-brown);
+}
+
+.product-card .card-title {
+  color: var(--dark-brown);
+  font-weight: bold;
+}
+
+.product-price {
+  color: var(--brown);
+}
+
+.add-btn {
+  background-color: var(--brown);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.add-btn:hover {
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+/* FOOTER */
+.coffee-footer {
+  background-color: var(--dark-brown);
+  color: white;
+  padding: 35px 0;
+}
+
+.coffee-footer h4 {
+  font-weight: bold;
+}
+
+.coffee-footer p {
+  color: #e3cdb6;
+}
+
+.coffee-footer small {
+  color: #c7ad95;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 45px 0;
+  }
+
+  .hero-image {
+    height: 260px;
+    margin-top: 35px;
+  }
+
+  .menu-section {
+    padding: 50px 0;
+  }
+}
+
+/* =====================================
+   ABOUT - VALUE CARDS
+===================================== */
+
+.value-card {
+  background-color: #68452f;
+  border: 1px solid #68452f;
+  border-radius: 13px;
+  padding: 28px 20px;
+  color: #fffaf2;
+  transition: 0.3s ease;
+}
+
+.value-card:hover {
+  background-color: #3d291e;
+  border-color: #3d291e;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(61, 41, 30, 0.18);
+}
+
+.value-card h5,
+.value-card h4 {
+  color: #fffaf2;
+  font-weight: bold;
+}
+
+.value-card p {
+  color: #ead8c5;
+}
+.value-card h5 {
+  color: #fffaf2 !important;
+}
+
+.value-card p {
+  color: #ead8c5 !important;
+}
+
+.value-card h2 {
+  color: #fffaf2;
+}
