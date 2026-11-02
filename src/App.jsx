@@ -1,17 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
+
 import { CartProvider } from './context/CartContext';
+
 import './App.css';
 
 function App() {
     return (
         <CartProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/kopi-senja">
                 <Navbar />
 
                 <Routes>
