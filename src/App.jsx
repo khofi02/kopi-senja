@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -14,17 +14,15 @@ import './App.css';
 function App() {
     return (
         <CartProvider>
-            <BrowserRouter basename="/kopi-senja">
-                <Navbar />
+            <Navbar />
 
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/menu" element={<Menu />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/cart" element={<Cart />} />
-                </Routes>
-            </BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/menu" element={<Menu />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/cart" element={<Cart />} />
+            </Routes>
         </CartProvider>
     );
 }
